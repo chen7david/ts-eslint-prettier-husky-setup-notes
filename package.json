@@ -1,0 +1,36 @@
+{
+  "name": "ts-eslint-prettier-husky-setup-notes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build && node dist/app.js",
+    "dev": "nodemon --watch './**/*.ts' --exec 'ts-node' src/app.ts",
+    "rm:dist": "tsc --build --clean",
+    "build": "npm run rm:dist && tsc -p tsconfig.build.json",
+    "build:watch": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chen7david/ts-eslint-prettier-husky-setup-notes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chen7david/ts-eslint-prettier-husky-setup-notes/issues"
+  },
+  "homepage": "https://github.com/chen7david/ts-eslint-prettier-husky-setup-notes#readme",
+  "devDependencies": {
+    "@types/node": "^18.6.5",
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
+    "eslint": "^8.21.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "nodemon": "^2.0.19",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  }
+}
