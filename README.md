@@ -59,7 +59,7 @@ This will install the following 5 packages:
 ```json
 {
   "env": {
-    "browser": true,
+    "node": true,
     "es2021": true
   },
   "extends": ["airbnb-base"],
