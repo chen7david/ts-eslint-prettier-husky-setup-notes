@@ -1,9 +1,11 @@
 
 # ts-eslint-prettier-husky-setup-notes
 
-### Setup Eslint
+
 
 <img src="https://user-images.githubusercontent.com/19669287/184055457-8a3c6c86-ff15-4c88-9763-37a07258406f.png" width="50">
+
+### Setup Eslint
 
 ESLint analyzes your code statically to identify problems quickly. Most text editors include it, and you can use ESLint as part of your continuous integration pipeline.
 
@@ -80,10 +82,10 @@ touch .eslintignore
 5. add <code>node_modules</code>, <code>dist</code>, and tother folders to your <code>.eslintignore</code> file.
 
 6. Install the visual code extension for <code>eslint</code>.
+<hr>
+<img src="https://user-images.githubusercontent.com/19669287/184055538-24b2d912-ee2c-4530-a12f-dabca0812074.png" width="50">
 
 ### Setup Prettier
-
-<img src="https://user-images.githubusercontent.com/19669287/184055538-24b2d912-ee2c-4530-a12f-dabca0812074.png" width="50">
 
 Prettier is an opinionated code formatter that works with a wide range of programming languages. Using this in all projects will improve the consistency of your code base.
 
@@ -126,6 +128,9 @@ touch .prettierignore
    1. then search for <code>format on</code> in the search bar.
    2. select <code>Editor: Format On Paste</code> and <code>Editor: Format On Save</code>
 
+<hr>
+<img src="https://user-images.githubusercontent.com/19669287/184055370-e0d1d76a-a341-47ed-9c28-be64e038f9fb.png" width="50">
+
 ### Setup Husky
 
 Husky enables you to run scripts in git hooks such as before commit.
@@ -139,8 +144,6 @@ npx husky-init
 choose yes when asked to install it.
 
 1. Install Husky
-
-<img src="https://user-images.githubusercontent.com/19669287/184055370-e0d1d76a-a341-47ed-9c28-be64e038f9fb.png" width="50">
 
 ```bash
 npx husky-init
