@@ -1,6 +1,9 @@
+
 # ts-eslint-prettier-husky-setup-notes
 
 ### Setup Eslint
+
+<img src="https://user-images.githubusercontent.com/19669287/184055457-8a3c6c86-ff15-4c88-9763-37a07258406f.png" width="50">
 
 ESLint analyzes your code statically to identify problems quickly. Most text editors include it, and you can use ESLint as part of your continuous integration pipeline.
 
@@ -80,6 +83,8 @@ touch .eslintignore
 
 ### Setup Prettier
 
+<img src="https://user-images.githubusercontent.com/19669287/184055538-24b2d912-ee2c-4530-a12f-dabca0812074.png" width="50">
+
 Prettier is an opinionated code formatter that works with a wide range of programming languages. Using this in all projects will improve the consistency of your code base.
 
 1. Install <code>prettier</code> and <code>prettier-eslint-config</code>
@@ -134,6 +139,8 @@ npx husky-init
 choose yes when asked to install it.
 
 1. Install Husky
+
+<img src="https://user-images.githubusercontent.com/19669287/184055370-e0d1d76a-a341-47ed-9c28-be64e038f9fb.png" width="50">
 
 ```bash
 npx husky-init
