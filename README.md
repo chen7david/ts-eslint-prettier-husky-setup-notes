@@ -138,3 +138,51 @@ choose yes when asked to install it.
 ```bash
 npx husky-init
 ```
+
+2. Add the following scripts to your <code>package.json</code> file.
+
+```json
+    "prepare": "husky install",
+    "check-types": "tsc --pretty --noEmit",
+    "check-format": "prettier --check .",
+    "check-lint": "eslint --ext ts --ext tsx --ext js",
+    "format": "prettier --write",
+    "check-all": "npm run check-format &&npm run check-lint &&npm run check-types &&npm run build"
+```
+
+3. Write the following in your <code>.husky > pre-commit</code> file.
+
+```bash
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+echo 'Styling, testing, and building your project before committing'
+
+# Check tsconfig standards
+npm run check-types || {
+    echo 'Failed type-check';
+    false;
+}
+
+# Check prettier standards
+npm run check-format || {
+    echo 'Failed format-check';
+    false;
+}
+
+# Check eslint standards
+npm run check-lint || {
+    echo 'Failed lint-check';
+    false;
+}
+
+echo 'Your code looks good, let us move on to building it now';
+
+# Check eslint standards
+
+npm run build || {
+    echo 'Failed to build proejct';
+    false;
+}
+
+# npm test
+```
