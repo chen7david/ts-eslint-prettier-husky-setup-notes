@@ -113,9 +113,28 @@ touch .prettierignore
 6. Install the visual code extension for <code>prettier</code>.
 
 7. in VsCode, go to <code>file > preferences > settings</code>:
-    1. then search for <code>default formatter</code> in the search bar.
-    2. set <code>Editor: Default Formatter</code> to <code>Prettier - Code formatter</code>
+
+   1. then search for <code>default formatter</code> in the search bar.
+   2. set <code>Editor: Default Formatter</code> to <code>Prettier - Code formatter</code>
 
 8. in VsCode, go to <code>file > preferences > settings</code>:
-    1. then search for <code>format on</code> in the search bar.
-    2. select <code>Editor: Format On Paste</code> and <code>Editor: Format On Save</code>
+   1. then search for <code>format on</code> in the search bar.
+   2. select <code>Editor: Format On Paste</code> and <code>Editor: Format On Save</code>
+
+### Setup Husky
+
+Husky enables you to run scripts in git hooks such as before commit.
+
+1. Install Husky
+
+```bash
+npx husky-init
+```
+
+choose yes when asked to install it.
+
+1. Install Husky
+
+```bash
+npx husky-init
+```
